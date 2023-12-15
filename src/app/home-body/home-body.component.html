@@ -1,0 +1,30 @@
+<header>
+  <section class="head">
+    <div class="txt">
+      <h3>Raining Offers For</h3>
+      <h3>Hot Summer</h3>
+      <h2>25% Off On All Products</h2>
+      <button class="btn btn-outline-primary">SHOP NOW</button>
+      <button class="btn btn-outline-primary">FIND MORE</button>
+    </div>
+  </section>
+</header>
+
+<section>
+  <h1 class="prd-txt">Featured Products</h1>
+  <hr />
+  <div class="d-flex">
+    <div class="item" *ngFor="let item of Data">
+      <div class="prd-img">
+        <img (click)="sendData(item.id)" src="{{ item.image }}" alt="" />
+      </div>
+      <div class="dtl">
+        <h3>
+          <a (click)="sendData(item.id)">{{ item.name }}</a>
+        </h3>
+        <span>{{ item.category }}</span>
+        <p>{{ item.price | currency : "INR" }}</p>
+      </div>
+    </div>
+  </div>
+</section>

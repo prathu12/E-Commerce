@@ -1,0 +1,16 @@
+<section>
+    <div class="d-flex">
+      <div class="item" *ngFor="let item of Data">
+        <div class="prd-img">
+          <img src="{{ item.image }}" alt=""/>
+        </div>
+        <div class="dtl">
+          <h3>
+            <a>{{ item.name }}</a>
+          </h3>
+          <span>{{ item.category }}</span>
+          <p>{{ item.price | currency : "INR" }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

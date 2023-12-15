@@ -1,0 +1,20 @@
+.navbar {
+  background-color: rgb(220, 205, 231);
+  color: black;
+}
+/* *{
+    justify-content: space-between;
+} */
+.sign-in {
+  border-radius: 10px;
+  background-color: transparent;
+  margin-right: 20px;
+}
+.right {
+  margin-right: 17px;
+}
+.log-in {
+  border-radius: 10px;
+  background-color: transparent;
+  margin-right: 20px;
+}
